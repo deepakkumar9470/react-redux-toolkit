@@ -13,13 +13,70 @@
 body{
   height: 100vh;
   font-family: 'Nunito', sans-serif;
-  overflow: hidden;
 }
 
-.background-red {
-  background-color: red;
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  padding:20px 10px;
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  outline: none;
 }
 
-.background-blue {
-  background-color: blue;
+.card p{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.card:nth-child(2){
+  background: blue;
+  color: #fff;
+}
+.card:nth-child(4){
+  background: rgb(143, 238, 193);
+  color: #fff;
+}
+.card:nth-child(4){
+  background: rgb(247, 132, 218);
+  color: #fff;
+}
+.card:nth-child(6){
+  background: rgb(236, 125, 125);
+  color: #fff;
+}
+.card:nth-child(8){
+  background: rgb(15, 7, 37);
+  color: #fff;
+}
+
+
+.card:nth-of-type(2n+1){
+  background: rgb(133, 93, 245);
+  color: #fff;
+}
+
+button{
+  background: #143F6B;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }

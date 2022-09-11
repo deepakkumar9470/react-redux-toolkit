@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import Home from './components/Home';
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   
   return (
     <div>
-              <p>Hello reduc part 1</p>
+              <Home/>
     </div>
   );
 }
