@@ -6,7 +6,6 @@ import styled from 'styled-components'
 import Home from './components/Home';
 import { useState } from 'react';
 
-// Ye Recat Redux-1 hai bhai
 function App() {
   
   const [storestate, setStoreState] = useState(0)
