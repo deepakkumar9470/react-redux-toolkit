@@ -16,67 +16,56 @@ body{
 }
 
 
-.container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 70%;
-  padding:20px 10px;
+img {
+  height: 80px;
 }
-.card{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  max-width: 400px;
-  width: 100%;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  outline: none;
-}
-
-.card p{
-  font-size: 18px;
-  font-weight: 700;
+.card {
+  background: white;
+  padding: 20px;
   text-align: center;
-  text-transform: capitalize;
+  border-radius: 10px;
 }
-
-.card:nth-child(2){
-  background: blue;
-  color: #fff;
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
-.card:nth-child(4){
-  background: rgb(143, 238, 193);
-  color: #fff;
-}
-.card:nth-child(4){
-  background: rgb(247, 132, 218);
-  color: #fff;
-}
-.card:nth-child(6){
-  background: rgb(236, 125, 125);
-  color: #fff;
-}
-.card:nth-child(8){
-  background: rgb(15, 7, 37);
-  color: #fff;
-}
-
-
-.card:nth-of-type(2n+1){
-  background: rgb(133, 93, 245);
-  color: #fff;
-}
-
-button{
-  background: #143F6B;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+.btn {
   border: none;
   outline: none;
-  font-size: 18px;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #513282;
+}
+
+.heading {
+  padding: 25px 0;
+}
+.cartCount {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+.navLink {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+.cartCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 5px;
 }
