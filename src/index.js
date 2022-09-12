@@ -3,16 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {Provider} from 'react-redux'
+import { PersistGate } from 'redux-persist/integration/react';
+import {persistStore} from 'redux-persist'
 import {store} from './redux/store'
 
-import {setupListeners} from '@reduxjs/toolkit/query'
+let persistor = persistStore(store);
 
-setupListeners(store.dispatch)
 ReactDOM.render(
-    <Provider store={store}>
+    
+   <Provider store={store}>
 
-       <App />
-    </Provider>
+         <PersistGate persistor={persistor} loading={null}>
+                <App />
+            </PersistGate>
+   </Provider>
+    
   
     ,
 document.getElementById('root'));

@@ -11,21 +11,35 @@
 	
 }
 body{
-  height: 100vh;
+
   font-family: 'Nunito', sans-serif;
+
 }
 
-
+.navbar{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(202, 202, 202);
+  padding: 20px;
+}
 img {
+  width: 100%;
   height: 80px;
+  object-fit: contain;
 }
 .card {
   background: white;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+  border: none;
+  box-shadow: 2px 3px 5px rgb(202, 202, 202);
 }
 .productsWrapper {
+  padding: 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -44,10 +58,12 @@ img {
 
 .btn:hover {
   background: #513282;
+  color: #fff;
 }
 
 .heading {
   padding: 25px 0;
+  text-align: center;
 }
 .cartCount {
   font-weight: bold;
@@ -59,7 +75,17 @@ img {
   color: black;
   margin-left: 20px;
 }
+.cartWrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
 
+.cartheading{
+  text-align: center;
+  margin: 20px 0;
+}
 .cartCard {
   display: flex;
   align-items: center;
